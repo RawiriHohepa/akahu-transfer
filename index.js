@@ -17,13 +17,8 @@ if (envKeyMissing) {
   return;
 }
 
-const fetchData = async (url, config) => {
-  const response = await fetch(url, config);
-  return await response.json();
-};
-
 (async () => {
-  const response = await fetchData("https://api.akahu.io/v1/transfers", {
+  const response = await fetch("https://api.akahu.io/v1/transfers", {
     method: "POST",
     headers: {
       accept: "application/json",
@@ -37,5 +32,5 @@ const fetchData = async (url, config) => {
       amount: AMOUNT,
     }),
   });
-  console.log(response);
+  console.log(await response.json());
 })();
