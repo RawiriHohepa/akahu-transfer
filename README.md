@@ -10,4 +10,5 @@ A small script to transfer money between bank accounts using Akahu
 ## Setup and use
 1. `npm install`
 2. Using your personal app credentials (see section above), find the Akahu IDs for the [accounts](https://developers.akahu.nz/reference/get_accounts) you want to transfer between
-3. `npm start [FROM_AKAHU_ID] [TO_AKAHU_ID] [AMOUNT]`
+3. `npm start [FROM_AKAHU_ID] [TO_AKAHU_ID] [AMOUNT]`  
+  e.g. `npm start acc_11111111111111111111 acc_22222222222222222222 12.34`
